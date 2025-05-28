@@ -29,7 +29,7 @@ bash ./tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM}
 
  - Evaluation:
 ```
-bash ./tools/dist_test_noc.sh ${CONFIG_FILE} ${WORK_DIR} ${GPU_NUM} --eval bbox
+bash ./tools/dist_test_noc.sh ${CONFIG_FILE} ${WORK_DIR} ${GPU_NUM} --eval mAP
 ```
 
 ## Acknowledgement
