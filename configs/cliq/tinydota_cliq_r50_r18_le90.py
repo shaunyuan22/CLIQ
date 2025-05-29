@@ -10,9 +10,9 @@ evaluation = dict(interval=12, metric='mAP')
 runner = dict(type='EpochBasedRunner', max_epochs=12)
 optimizer = dict(type='SGD', lr=0.005, momentum=0.9, weight_decay=0.0001)
 data = dict(samples_per_gpu=1,
-            train=dict(max_user_input = 20, rand_sample = None, max_gt_num_perimg=1000),
-            val=dict(max_user_input = 20, rand_sample = None, max_gt_num_perimg=1000),
-            test=dict(max_user_input = 20, rand_sample = None, max_gt_num_perimg=2000)#max_gt_num_perimg invalid in test
+            train=dict(max_user_input = 20, max_gt_num_perimg=1000),
+            val=dict(max_user_input = 20, max_gt_num_perimg=1000),
+            test=dict(max_user_input = 20, max_gt_num_perimg=2000)#max_gt_num_perimg invalid in test
             )
 lr_config = dict(warmup_iters=5000)
 object_classes = 8
