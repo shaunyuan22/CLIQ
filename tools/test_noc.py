@@ -200,7 +200,7 @@ def main():
 
 
     init_point = 1
-    max_points = 20
+    max_points = 21
     for point in range(init_point, max_points):
         dataset.drawer.iter = point
         print(f'{point} iteration')
